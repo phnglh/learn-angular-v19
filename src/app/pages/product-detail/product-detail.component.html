@@ -1,0 +1,7 @@
+<h2>Chi tiết sản phẩm</h2>
+<div *ngIf="product">
+  <h3>{{ product.title }}</h3>
+  <p><strong>Giá:</strong> {{ product.price }}</p>
+  <p><strong>Mô tả:</strong> {{ product.description }}</p>
+  <img [src]="product.image" width="150" />
+</div>
